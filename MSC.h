@@ -66,7 +66,7 @@ void MSC::cluster(double bw, MAT1D &DATAx, MAT1D &DATAy){
             // shift points
             x=SHIFT(DATAx); X(0,n-N)=x;
             y=SHIFT(DATAy); Y(0,n-N)=y;
-        }while(PO2(x-xi)+PO2(y-yi>Dmax));
+        }while(PO2(x-xi)+PO2(y-yi)>Dmax);
         
         printf("%f %f -> %f %f\n",xo,yo,x,y);
     }
