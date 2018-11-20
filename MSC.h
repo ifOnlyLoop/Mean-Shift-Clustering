@@ -36,11 +36,6 @@ void MSC::cluster(double bw, MAT1D &DATAx, MAT1D &DATAy){
     
     TEMP1Dx.resize(NoChange,N);
     TEMP1Dy.resize(NoChange,N);
-    vector<bool> isClustered;
-    
-    for(int i=0;i<N;i++){
-        isClustered.push_back(false);
-    }
 
     W.resize(NoChange,N);
     X.resize(NoChange,N);
